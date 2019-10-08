@@ -21,10 +21,19 @@ module.exports.routes = {
 
   // '/': { view: 'pages/homepage' },
   '/' : 'PersonController.index',
+
+  'GET /person/create': 'PersonController.create',
+  'POST /person/create': 'PersonController.create',
+  'GET /perosn/json': 'PersonController.json',
+  'GET /person/index': 'PersonController.index',
+  'GET /person/search': 'PersonController.search',
+  'GET /person/paginate': 'PersonController.paginate',
+
   'GET /person/view/:id': 'PersonController.view',
   'POST /person/delete/:id': 'PersonController.delete',
   'GET /person/update/:id': 'PersonController.update',
   'POST /person/update/:id': 'PersonController.update',
+  
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *
